@@ -7,66 +7,112 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="assetss/style/style.css">
+    <link rel="stylesheet" href="/assetss/style/slider.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
     <title>Document</title>
 </head>
 <body>
-  <section id="navbar">
-    <nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light p-3 shadow-sm">
-      <div class="container">
-        <a class="navbar-logo" href="https://fiorello.qodeinteractive.com/#"><img width="200px" src="assetss/images/logoblack.png" alt="flower logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-          <ul class="navbar-nav ms-auto ">
-            <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase active" aria-current="page" href="#">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase" href="#">PAGES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase" href="#">SHOP</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase" href="#">PORTFOLIO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase" href="#">ELEMENTS</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav ms-auto ">
-            <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase" href="#"><i class="fa-solid fa-magnifying-glass search-icon"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase" href="#"><i class="bi bi-bag"><sup class="order-">3</sup></i>CART($477)</a>
-            </li>
-          </ul>
+  <header>
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light p-3 shadow-sm">
+        <div class="container">
+          <a class="navbar-logo" href="https://fiorello.qodeinteractive.com/#"><img width="200px" src="assetss/images/logoblack.png" alt="flower logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item">
+                <a class="nav-link mx-2 text-uppercase active" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 text-uppercase" href="#">PAGES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 text-uppercase" href="#">SHOP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 text-uppercase" href="#">PORTFOLIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 text-uppercase" href="#">ELEMENTS</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item">
+                <a class="nav-link mx-2 text-uppercase" href="#"><i class="fa-solid fa-magnifying-glass search-icon"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 text-uppercase" href="#"><i class="bi bi-bag"><sup class="order-">3</sup></i>CART($477)</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </section>
-  <section id="photo-place">
-   <div class="slideshow-container">
-    <div class="slide-photo">
-      <div class="photo-sentences">
-        <h1 class="photo-motto">Send<span class="flowers"> flowers </span>like you mean it.</h1>
-        <p class="photo-words">Where flowers are our inpiration to create lasting memories.
-          Whatever the occasion,our flowers will make it special cursus a sit amet mauris.
-        </p>
-        <img src="assetss/images/gul-imza.png" alt="imza">
-      </div>
-      <div class="slide-photo">
-        <img src="assetss/images/kaktus-sag.jpg" style="width:100%">
-      </div>
-      <div class="slide-photo">
-           <img src="assetss/images/qirmizigul-solda.jpg" style="width:100%">
-      </div>
-      <div class="slide-photo">
-           <img src="assetss/images/elindegultutan-sag.jpg" style="width:100%">
-      </div>
-     </div>
-  </section>
+      </nav>
+    </section>
+  </header>
+<main>
+  <section id="slider">
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <div class="owl-text-overlay d-flex flex-column align-items-start">
+                <h2 class="text-slider text-start">Send <span>flowers</span> like <br />you mean it.</h2>
+                <p class=" text-slider_p text-start">
+                    Where flowers are our isnpiration to create lasting memories.
+                    Whatever the occasion, our flowers will make it special.
+                </p>
+                <img class=" slider_img" src="/assetss/images/gul-imza.png "
+                    alt="" width="200px" />
+            </div>
+            <img class="owl-img" src="/assetss/images/kaktus-sag.jpg" alt="" draggable="false" />
+        </div>
+        <div class="item">
+            <div class="owl-text-overlay d-flex flex-column align-items-start">
+                <h2 class="text-slider">Send <span>flowers</span> like <br />you mean it.</h2>
+                <p class=" text-slider_p">
+                    Where flowers are our isnpiration to create lasting memories.
+                    Whatever the occasion, our flowers will make it special.
+                </p>
+                <img class="slider_img" src="/assetss/images/gul-imza.png"
+                    alt="" width="200px"/>
+            </div>
+            <img src="/assetss/images/elindegultutan-sag.jpg" alt="" draggable="false" />
+        </div>
+        <div class="item">
+            <div class="owl-text-overlay d-flex flex-column align-items-start">
+                <h2 class="text-slider">Send <span>flowers</span> like <br />you mean it.</h2>
+                 <p class=" text-slider_p">
+                    Where flowers are our isnpiration to create lasting memories.
+                    Whatever the occasion, our flowers will make it special.
+                </p>
+                <img class="slider_img" src="/assetss/images/gul-imza.png"
+                    alt="" />
+            </div>
+            <img src="/assetss/images/qirmizigul-solda.jpg" alt="" draggable="false" />
+        </div>
+    </div>
+</section>
+</main>
+  <script src="/assetss/js/main.js"></script>
+  <script src="assetss/js/home.js"></script>
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://kit.fontawesome.com/ea59f2a167.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>

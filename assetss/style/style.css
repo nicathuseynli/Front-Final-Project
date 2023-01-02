@@ -16,23 +16,12 @@ a {
       text-align:center
     }
   }
-.flowers{
-  color: red;
-}
-.photo-sentences{
-  z-index: 1;
-  position: absolute;
-  padding-left: 200px;
-  padding-top: 200px;
-  float: left;
-}
-.photo-motto{
-  font-size: px;
-  flex-wrap: wrap;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  width: 50%;
-}
-.photo-words{
-  width: 50%;
-  font-size: 20px;
-}
+  @media screen and (max-width:540px){
+    #slider,.slider-sentence {
+      font-size: 4px;
+    }
+  }
+ 
+
+  
+ 
